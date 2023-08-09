@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: whitesmoke;
+    background-color: black;
 }
 
 .welcome-page {
@@ -27,12 +27,16 @@ body {
     font-size: 3em;
 }
 
+u {
+    text-decoration-color: gold;
+}
+
 .nav-bar {
     position: relative;
     right: 0;
     left: 0;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: black;
     border-bottom: 5px solid gold;
 }
 
