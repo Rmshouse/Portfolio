@@ -1,15 +1,91 @@
+.welcome-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: paleturquoise;
+}
+
+.welcome-page p {
+    font-family: fantasy;
+    font-size: 2em;
+    text-align: center;
+}
+
+.make-big {
+    color: darkviolet;
+    font-size: 3em;
+}
+
 .nav-bar {
     position: fixed;
+    z-index: 1;
     display: inline-block;
+    bottom: 0;
+    top: 0;
+    left: 0;
     height: 100%;
-    padding: 1%;
-    background-color: aquamarine;
+    width: 5%;
+    background-color: white;
+    border-right: 5px solid gold;
 }
+
 nav ul {
-    height: 90%;
+    height: 100%;
     padding: 0;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+li button {
+    border: none;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: larger;
+    background-color: white;
+    color: darkviolet;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.animation-out {
+    animation: slide-out 1s ease 0s 1 normal both;
+}
+
+.animation-in {
+    animation: slide-in 1s ease 0s 1 normal both;
+}
+
+.animation-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98%;
+    width: 94%;
+    margin: 0 0 0 -200%;
+    background-color: paleturquoise;
+    text-align: center;
+}
+
+@keyframes slide-out {
+    from {margin: 0 0 0 -200%;}
+    to {margin: 0 0 0 5%;}
+}
+
+@keyframes slide-in {
+    from {margin: 0 0 0 5%;}
+    to {margin: 0 0 0 -200%;}
 }
