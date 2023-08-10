@@ -10,25 +10,41 @@
     </head>
 
     <body>
-        <nav id="navigation-bar" class="nav-bar">
-            <ul>
-                <li><button type="button" id="about-button" class="about-button">ABOUT</button></li>
-                <li><button type="button" id="projects-button" class="projects-button">PROJECTS</button></li>
-                <li><a href="mailto:ryan.shouse@mykenzie.snhu.edu"><img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="gmail logo" height="25" width="25"></a></li>
-                <li><a href="https://www.linkedin.com/in/rmshouse/" target="_blank"><img class="contact-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin logo" height="25" width="25"></a></li>
-                <li><a href="https://github.com/Rmshouse/Portfolio" target="_blank"><img class="contact-icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" height="25" width="25"></a></li>
-            </ul>
-        </nav>
-        <section id="welcome-page" class="welcome-page">
-            <p><span class="make-big"><u>Hello!</u></span><br/> My name is <br/><span class="make-big"><u>Ryan Shouse.</u></span><br/> Aspiring front-end web developer.</p>
+        <div class="overflow-x-hidden">
+            <div id="top-of-page"></div>
+            <nav class="top-bar">
+                <ul class="nav-bar">
+                    <li><a href="#top-of-page">TOP</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="https://www.linkedin.com/in/rmshouse/" target="_blank"><img class="contact-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin logo" height="30" width="30"></a></li>
+                    <li><a href="mailto:ryan.shouse@mykenzie.snhu.edu"><img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="gmail logo" height="30" width="30"></a></li>
+                    <li><a href="https://github.com/Rmshouse/Portfolio" target="_blank"><img class="contact-icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github logo" height="30" width="30"></a></li>
+                </ul>
+            </nav>
+
+            <main class="main-wrapper">
+                <section class="welcome-to-the-page">
+                    <p><span class="make-big"><u>Hello!</u></span><br/> My name is <br/><span class="make-big"><u>Ryan Shouse.</u></span><br/> Aspiring front-end web developer.</p>
+                </section>
+                <section id="about" class="about">
+                    <header class="make-big"><u>ABOUT</u></header>
+                    <p>After ten years working in various professional kitchens I decided I wanted something different in life.<br/> Spent some time as a stay-at-home parent before returning to the workforce and receiving an opportunity to try front-end web development through Amazon in the form of paid-for education programs.<br/> I learned quickly that I really enjoy coding and earned my certificate for front-end web development through Kenzie Academy at Southern New Hampshire University.</p>
+                </section>
+                <section id="skills" class="skills">
+                    <header class="make-big"><u>SKILLS</u></header>
+                    <p>During my time with Kenzie Academy I learned foundational skills and knowledge using HTML, CSS and Javascript as well as version control with GitHub. I am eager to add upon this throughout my career learning as much as I can.</p>
+                </section>
+            </main>
+        </div>
+        <!-- <section id="welcome-page" class="welcome-page">
             
-            <section id="about" class="animation-content about">
-                <p>After ten years working in various professional kitchens I decided I wanted something different in life.<br/> Spent some time as a stay-at-home parent before returning to the workforce and receiving an opportunity to try front-end through Amazon in the form of paid-for education programs.<br/> I learned quickly that I really enjoy coding and earned my certificate for front-end web development through Kenzie Academy at Southern New Hampshire University.<br/> I am very eager to expand on the foundational skills and knowledge I received there.</p>
-            </section>
+            
+            
             <section id="projects" class="animation-content projects">
                 <a href="https://github.com/Rmshouse/Flipped-Up-Trivia" target="_blank"><img src="https://i.ibb.co/Q8W4ZGy/Flipped-Up-Trivia.jpg" alt="screenshot of Flipped Up Trivia project" height="25%" width="25%"><br/> Jeopardy! style quiz game made as capstone project to complete front-end certificate course.</a>
             </section>
-        </section>
+        </section> -->
 
         <script src="portfolio.js"></script>
     </body>
