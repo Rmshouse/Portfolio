@@ -31,41 +31,34 @@ a {
     color: inherit;
 }
 
-.main-wrapper {
-    margin: 5%;
-    padding: 5%;
-}
-
 .make-big {
     font-size: 3em;
     font-family: copperplate;
     font-weight: bold;
-}
-
-.make-big u {
+    text-decoration: underline;
     text-decoration-color: darkviolet;
     text-decoration-thickness: 5px;
 }
 
 .welcome-to-the-page {
-    margin-bottom: 10%;
-    padding-bottom: 10%;
+    margin: 5% 5% 10% 5%;
+    padding: 5% 5% 10% 5%;
     font-family: papyrus, fantasy;
     font-size: 2em;
     text-align: center;
 }
 
 .about {
-    margin: 10% 0 10% 0;
-    padding: 10% 0 10% 0;
+    margin: 10% 5% 10% 5%;
+    padding: 10% 5% 10% 5%;
     text-align: left;
     font-size: 1.5em;
     font-family: papyrus, fantasy;
 }
 
 .skills {
-    margin: 10% 0 10% 0;
-    padding: 10% 0 10% 0;
+    margin: 10% 5% 10% 5%;
+    padding: 10% 5% 10% 5%;
     text-align: right;
     font-size: 1.5em;
     font-family: papyrus, fantasy;
@@ -76,16 +69,20 @@ a {
 }
 
 .projects {
-    margin: 10% 0 10% 0;
-    padding: 10% 0 10% 0;
+    margin: 10% 5% 10% 5%;
+    padding: 10% 5% 10% 5%;
     text-align: left;
     font-size: 1.5em;
     font-family: papyrus, fantasy;
 }
 
+.projects a {
+    font-weight: bold;
+}
+
 .contact {
-    margin-top: 10%;
-    padding-top: 10%;
+    margin: 10% 5% 5% 5%;
+    padding: 10% 5% 5% 5%;
     text-align: center;
     font-size: 1.5em;
     font-family: papyrus, fantasy;
@@ -99,4 +96,103 @@ a {
 
 p {
     font-weight: bold;
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        margin: 0;
+    }
+    
+    .overflow-x-hidden {
+        overflow-x: hidden;
+        background-image: linear-gradient(to right, white, paleturquoise, turquoise, mediumturquoise, darkturquoise);
+    
+    }
+    
+    .top-bar {
+        position: fixed;
+        width: 100%;
+        border-bottom: 5px solid darkviolet;
+        background-image: linear-gradient(to right, white, paleturquoise, turquoise, mediumturquoise, darkturquoise);
+    }
+    
+    .nav-bar {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: copperplate;
+        font-weight: bold;
+        font-size: 1em;
+        
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .make-big {
+        font-size: 2em;
+        font-family: copperplate;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: darkviolet;
+        text-decoration-thickness: 5px;
+    }
+    
+    .welcome-to-the-page {
+        margin: 20% 5% 20% 5%;
+        padding: 20% 5% 30% 5%;
+        font-family: papyrus, fantasy;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .about {
+        margin: 20% 5% 20% 5%;
+        padding: 50% 5% 50% 5%;
+        text-align: left;
+        font-size: 1em;
+        font-family: papyrus, fantasy;
+    }
+    
+    .skills {
+        margin: 20% 5% 20% 5%;
+        padding: 50% 5% 50% 5%;
+        text-align: right;
+        font-size: 1em;
+        font-family: papyrus, fantasy;
+    }
+    
+    .skill-logos img {
+        padding: 1%;
+    }
+    
+    .projects {
+        margin: 20% 5% 20% 5%;
+        padding: 50% 5% 50% 5%;
+        text-align: left;
+        font-size: 1em;
+        font-family: papyrus, fantasy;
+    }
+    
+    .contact {
+        margin-top: 20% 5% 20% 5%;
+        padding-top: 50% 5% 50% 5%;
+        text-align: center;
+        font-size: 1em;
+        font-family: papyrus, fantasy;
+    }
+    
+    .contact-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    p {
+        font-weight: bold;
+    }
 }
