@@ -16,13 +16,14 @@ body {
 }
 
 .nav-bar {
+    padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: copperplate;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 2em;
     
 }
 
@@ -41,24 +42,24 @@ a {
 }
 
 .welcome-to-the-page {
-    margin: 5% 5% 10% 5%;
-    padding: 5% 5% 10% 5%;
+    margin: 5%;
+    padding: 10% 0 20% 0;
     font-family: papyrus, fantasy;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
 }
 
 .about {
-    margin: 10% 5% 10% 5%;
-    padding: 10% 5% 10% 5%;
+    margin: 5%;
+    padding: 20% 0 20% 0;
     text-align: left;
     font-size: 1.5em;
     font-family: papyrus, fantasy;
 }
 
 .skills {
-    margin: 10% 5% 10% 5%;
-    padding: 10% 5% 10% 5%;
+    margin: 5%;
+    padding: 20% 0 20% 0;
     text-align: right;
     font-size: 1.5em;
     font-family: papyrus, fantasy;
@@ -69,8 +70,8 @@ a {
 }
 
 .projects {
-    margin: 10% 5% 10% 5%;
-    padding: 10% 5% 10% 5%;
+    margin: 5%;
+    padding: 20% 0 20% 0;
     text-align: left;
     font-size: 1.5em;
     font-family: papyrus, fantasy;
@@ -80,9 +81,13 @@ a {
     font-weight: bold;
 }
 
+h3 {
+    font-family: copperplate, fantasy;
+}
+
 .contact {
-    margin: 10% 5% 5% 5%;
-    padding: 10% 5% 5% 5%;
+    margin: 5%;
+    padding: 20% 0 10% 0;
     text-align: center;
     font-size: 1.5em;
     font-family: papyrus, fantasy;
@@ -98,101 +103,106 @@ p {
     font-weight: bold;
 }
 
-@media screen and (max-width: 420px) {
-    body {
-        margin: 0;
-    }
-    
-    .overflow-x-hidden {
-        overflow-x: hidden;
-        background-image: linear-gradient(to right, white, paleturquoise, turquoise, mediumturquoise, darkturquoise);
-    
-    }
-    
-    .top-bar {
-        position: fixed;
-        width: 100%;
-        border-bottom: 5px solid darkviolet;
-        background-image: linear-gradient(to right, white, paleturquoise, turquoise, mediumturquoise, darkturquoise);
-    }
+@media screen and (max-width: 700px) {
     
     .nav-bar {
-        list-style-type: none;
-        display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        font-family: copperplate;
-        font-weight: bold;
-        font-size: 1em;
+        font-size: 1.5em;
         
-    }
-    
-    a {
-        text-decoration: none;
-        color: inherit;
     }
     
     .make-big {
         font-size: 2em;
-        font-family: copperplate;
-        font-weight: bold;
-        text-decoration: underline;
-        text-decoration-color: darkviolet;
-        text-decoration-thickness: 5px;
     }
     
     .welcome-to-the-page {
-        margin: 20% 5% 20% 5%;
-        padding: 20% 5% 30% 5%;
-        font-family: papyrus, fantasy;
-        font-size: 1.5em;
-        text-align: center;
+        padding: 30% 0 40% 0;
+        font-size: 1em;
     }
     
     .about {
-        margin: 20% 5% 20% 5%;
-        padding: 50% 5% 50% 5%;
-        text-align: left;
+        padding: 40% 0 40% 0;
         font-size: 1em;
-        font-family: papyrus, fantasy;
     }
     
     .skills {
-        margin: 20% 5% 20% 5%;
-        padding: 50% 5% 50% 5%;
-        text-align: right;
+        padding: 40% 0 40% 0;
         font-size: 1em;
-        font-family: papyrus, fantasy;
-    }
-    
-    .skill-logos img {
-        padding: 1%;
     }
     
     .projects {
-        margin: 20% 5% 20% 5%;
-        padding: 50% 5% 50% 5%;
-        text-align: left;
+        padding: 40% 0 40% 0;
         font-size: 1em;
-        font-family: papyrus, fantasy;
     }
     
     .contact {
-        margin-top: 20% 5% 20% 5%;
-        padding-top: 50% 5% 50% 5%;
-        text-align: center;
+        padding: 30% 0 20% 0;
         font-size: 1em;
-        font-family: papyrus, fantasy;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome-to-the-page {
+        padding: 60% 0 70% 0;
     }
     
-    .contact-links {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .about {
+        padding: 50% 0 50% 0;
     }
     
-    p {
-        font-weight: bold;
+    .skills {
+        padding: 50% 0 50% 0;
+    }
+    
+    .projects {
+        padding: 50% 0 50% 0;
+    }
+    
+    .contact {
+        padding: 60% 0 40% 0;
+    }
+}
+
+@media screen and (max-width: 380px) { 
+    .welcome-to-the-page {
+        padding: 50% 0 60% 0;
+    }
+    
+    .about {
+        padding: 60% 0 60% 0;
+    }
+    
+    .skills {
+        padding: 60% 0 60% 0;
+    }
+    
+    .projects {
+        padding: 60% 0 60% 0;
+    }
+
+    .contact {
+        padding: 60% 0 20% 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .welcome-to-the-page {
+        padding: 60% 0 70% 0;
+    }
+    
+    .about {
+        padding: 70% 0 70% 0;
+    }
+    
+    .skills {
+        padding: 70% 0 70% 0;
+    }
+    
+    .projects {
+        padding: 70% 0 70% 0;
+    }
+    
+    .contact {
+        padding: 70% 0 20% 0;
     }
 }
