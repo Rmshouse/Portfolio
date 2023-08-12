@@ -1,27 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+    background-color: whitesmoke;
 }
 
 .overflow-x-hidden {
+    margin: 0 3% 3% 3%;
     overflow-x: hidden;
+    background-color: white;
     background-image: linear-gradient(to right, white, paleturquoise, turquoise, mediumturquoise, darkturquoise);
 
 }
 
 .top-bar {
-    position: fixed;
-    width: 100%;
+    margin: 0 3% 0 3%;
+    height: 4em;
+    position: sticky;
+    top: 0;
     border-bottom: 5px solid darkviolet;
     background-image: linear-gradient(to right, white, paleturquoise, turquoise, mediumturquoise, darkturquoise);
 }
 
 .nav-bar {
-    padding: 0;
+    padding: 1%;
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: copperplate;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 2em;
     
@@ -34,7 +43,7 @@ a {
 
 .make-big {
     font-size: 3em;
-    font-family: copperplate;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: darkviolet;
@@ -42,27 +51,15 @@ a {
 }
 
 .welcome-to-the-page {
-    margin: 5%;
-    padding: 10% 0 20% 0;
-    font-family: papyrus, fantasy;
-    font-size: 1.5em;
     text-align: center;
 }
 
 .about {
-    margin: 5%;
-    padding: 20% 0 20% 0;
     text-align: left;
-    font-size: 1.5em;
-    font-family: papyrus, fantasy;
 }
 
 .skills {
-    margin: 5%;
-    padding: 20% 0 20% 0;
     text-align: right;
-    font-size: 1.5em;
-    font-family: papyrus, fantasy;
 }
 
 .skill-logos img {
@@ -70,27 +67,39 @@ a {
 }
 
 .projects {
-    margin: 5%;
-    padding: 20% 0 20% 0;
     text-align: left;
-    font-size: 1.5em;
-    font-family: papyrus, fantasy;
 }
 
-.projects a {
-    font-weight: bold;
+.collapsible {
+    width: 100%;
+    background-color: darkviolet;
+    cursor: pointer;
+    border: none;
+    font-size: 2em;
+    text-align: left;
 }
 
-h3 {
-    font-family: copperplate, fantasy;
+.active, .collapsible:hover {
+    background-color: darkorchid;
+}
+
+.collapsible:after {
+    content: '\02795';
+    float: right;
+    margin-left: 1%;
+  }
+
+  .active:after {
+    content: "\2796";
+  }
+
+.collapsible-content {
+    display:none;
+    overflow: hidden;
 }
 
 .contact {
-    margin: 5%;
-    padding: 20% 0 10% 0;
     text-align: center;
-    font-size: 1.5em;
-    font-family: papyrus, fantasy;
 }
 
 .contact-links {
@@ -99,110 +108,12 @@ h3 {
     align-items: center;
 }
 
+.section-margin-padding {
+    margin: 5%;
+    padding: 5%;
+}
+
 p {
-    font-weight: bold;
-}
-
-@media screen and (max-width: 700px) {
-    
-    .nav-bar {
-        flex-direction: column;
-        font-size: 1.5em;
-        
-    }
-    
-    .make-big {
-        font-size: 2em;
-    }
-    
-    .welcome-to-the-page {
-        padding: 30% 0 40% 0;
-        font-size: 1em;
-    }
-    
-    .about {
-        padding: 40% 0 40% 0;
-        font-size: 1em;
-    }
-    
-    .skills {
-        padding: 40% 0 40% 0;
-        font-size: 1em;
-    }
-    
-    .projects {
-        padding: 40% 0 40% 0;
-        font-size: 1em;
-    }
-    
-    .contact {
-        padding: 30% 0 20% 0;
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .welcome-to-the-page {
-        padding: 60% 0 70% 0;
-    }
-    
-    .about {
-        padding: 50% 0 50% 0;
-    }
-    
-    .skills {
-        padding: 50% 0 50% 0;
-    }
-    
-    .projects {
-        padding: 50% 0 50% 0;
-    }
-    
-    .contact {
-        padding: 60% 0 40% 0;
-    }
-}
-
-@media screen and (max-width: 380px) { 
-    .welcome-to-the-page {
-        padding: 50% 0 60% 0;
-    }
-    
-    .about {
-        padding: 60% 0 60% 0;
-    }
-    
-    .skills {
-        padding: 60% 0 60% 0;
-    }
-    
-    .projects {
-        padding: 60% 0 60% 0;
-    }
-
-    .contact {
-        padding: 60% 0 20% 0;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .welcome-to-the-page {
-        padding: 60% 0 70% 0;
-    }
-    
-    .about {
-        padding: 70% 0 70% 0;
-    }
-    
-    .skills {
-        padding: 70% 0 70% 0;
-    }
-    
-    .projects {
-        padding: 70% 0 70% 0;
-    }
-    
-    .contact {
-        padding: 70% 0 20% 0;
-    }
+    font-size: 1.5em;
+    font-family: sans-serif;
 }
