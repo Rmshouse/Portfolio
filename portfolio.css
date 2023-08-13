@@ -15,7 +15,7 @@ body {
 
 }
 
-.top-bar {
+.nav-bar {
     margin: 0 1rem 0 1rem;
     height: 4rem;
     position: sticky;
@@ -24,7 +24,7 @@ body {
     background-image: linear-gradient(to right, white, paleturquoise, turquoise, mediumturquoise, darkturquoise);
 }
 
-.nav-bar {
+.nav-links {
     padding: 1rem;
     list-style-type: none;
     display: flex;
@@ -64,7 +64,7 @@ h1 {
     text-decoration-color: darkviolet;
 }
 
-.welcome-to-the-page {
+.welcome {
     margin-top: 1rem;
     padding-top: 1rem;
     text-align: center;
