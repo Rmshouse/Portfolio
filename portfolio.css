@@ -79,6 +79,7 @@ body.dark {
 
 .nav-links a {
     display: block;
+    margin: 1rem;
 }
 
 .switch-wrapper {
