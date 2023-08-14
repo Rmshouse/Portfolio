@@ -13,17 +13,33 @@
     </head>
 
     <body>
-        <nav class="nav-bar">
-            <ul class="nav-links">
-                <li><a href="#">TOP</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+        <nav id="nav-bar" class="nav-bar">
+            <section class="drop-down">
+                <button type="button" id="drop-button" class="drop-button">GO-TO</button>
+                <span id="nav-links" class="nav-links">
+                    <a class="nav-a" href="#">TOP</a>
+                    <a class="nav-a" href="#about">ABOUT</a>
+                    <a class="nav-a" href="#skills">SKILLS</a>
+                    <a class="nav-a" href="#projects">PROJECTS</a>
+                    <a class="nav-a" href="#contact">CONTACT</a>
+                </span>
+            </section>
+            <section class="switch-wrapper">
+                LIGHT
+                <label class="switch">
+                    <input type="checkbox" id="checkbox" class="checkbox">
+                    <span class="slider"></span>
+                </label>
+                DARK
+            </section>
+            <span class="contact-links">
+                <a href="mailto:ryan.shouse@mykenzie.snhu.edu"><img src="images/Gmail-logo.png" alt="gmail logo" height="15" width="20"></a>
+                <a href="https://www.linkedin.com/in/rmshouse/" target="_blank"><img src="images/linkedIn-logo.png" alt="linkedin logo" height="15" width="15"></a>
+                <a href="https://github.com/Rmshouse/Portfolio" target="_blank"><img src="images/github-logo.png" alt="github logo" height="15" width="15"></a>
+            </span>
         </nav>
 
-        <main class="overflow-x-hidden">
+        <main class="main-content">
             <section class="welcome section-margin-padding">
                 <h1>Hello my name is <br/><span class="make-big">Ryan Shouse</span><br/>Aspiring<br/><span class="make-big">Front-End Web Developer</span></h1>
             </section>
@@ -33,7 +49,7 @@
             </section>
             <section id="skills" class="skills section-margin-padding">
                 <header class="make-big">SKILLS</header>
-                <span class="skill-logos"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html logo" height="50" width="50"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="css logo" height="50" width="50"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png?20120221235433" alt="javascript logo" height="50" width="50"><img src="https://i.ibb.co/zspzJ3Q/github-mark.png" alt="github logo" height="50" width="50"></span>
+                <span class="skill-logos"><img src="images/HTML5-logo.png" alt="html logo" height="50" width="50"><img src="images/CSS3-logo.png" alt="css logo" height="50" width="50"><img src="images/JavaScript-logo.png" alt="javascript logo" height="50" width="50"><img src="images/github-logo.png" alt="github logo" height="50" width="50"></span>
                 <p>During my time with Kenzie Academy I learned foundational skills and knowledge using HTML, CSS and Javascript as well as version control with GitHub. The main focus of the course was learning the basics and writing clean and semantically correct code. I am eager to add upon this throughout my career learning as much as I can.</p>
             </section>
             <section id="projects" class="projects section-margin-padding">
@@ -41,7 +57,7 @@
                 <p>I hope to fill this section with many new things as I really enjoy working on web development projects.</p>
                 <button type="button" class="collapsible">Flipped Up Trivia!</button>
                 <section class="collapsible-content">
-                    <a href="https://github.com/Rmshouse/Flipped-Up-Trivia" target="_blank"><img src="https://i.ibb.co/KNtJYHT/Flipped-Up-Trivia.jpg" alt="Flipped-Up-Trivia"></a>
+                    <a href="https://github.com/Rmshouse/Flipped-Up-Trivia" target="_blank"><img src="images/FlippedUpTrivia.jpg" alt="Flipped-Up-Trivia" height="100" width="175"></a>
                     <p>A trivia game loosely based off Jeopardy!<br/> Capstone project required to finish my certificate program.</p>
                 </section>
             </section>
@@ -49,9 +65,9 @@
                 <header class="make-big">Contact</header>
                 <p>You can reach me through my email, LinkedIn, or check out my code on my GitHub.</p>
                 <span class="contact-links">
-                    <a href="mailto:ryan.shouse@mykenzie.snhu.edu"><img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_128px.png" alt="gmail logo" height="30" width="40"></a>
-                    <a href="https://www.linkedin.com/in/rmshouse/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin logo" height="30" width="30"></a>
-                    <a href="https://github.com/Rmshouse/Portfolio" target="_blank"><img src="https://i.ibb.co/zspzJ3Q/github-mark.png" alt="github logo" height="30" width="30"></a>
+                    <a href="mailto:ryan.shouse@mykenzie.snhu.edu"><img src="images/Gmail-logo.png" alt="gmail logo" height="30" width="40"></a>
+                    <a href="https://www.linkedin.com/in/rmshouse/" target="_blank"><img src="images/linkedIn-logo.png" alt="linkedin logo" height="30" width="30"></a>
+                    <a href="https://github.com/Rmshouse/Portfolio" target="_blank"><img src="images/github-logo.png" alt="github logo" height="30" width="30"></a>
                 </span>
             </footer>
         </main>
