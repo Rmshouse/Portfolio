@@ -10,12 +10,13 @@
         <title>Ryan Shouse | Front-End Web Developer</title>
 
         <link href="portfolio.css" rel="stylesheet" media="all">
+        <script src="https://kit.fontawesome.com/80b4bcc2bd.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <nav id="nav-bar" class="nav-bar">
             <section class="drop-down">
-                <button type="button" id="drop-button" class="drop-button">GO-TO</button>
+                <button type="button" id="drop-button" class="drop-button"><i class="fa-solid fa-bars"></i></button>
                 <span id="nav-links" class="nav-links">
                     <a class="nav-a" href="#">TOP</a>
                     <a class="nav-a" href="#about">ABOUT</a>
@@ -24,36 +25,32 @@
                     <a class="nav-a" href="#contact">CONTACT</a>
                 </span>
             </section>
-            <section class="switch-wrapper">
-                LIGHT
-                <label class="switch">
-                    <input type="checkbox" id="checkbox" class="checkbox">
-                    <span class="slider"></span>
-                </label>
-                DARK
+
+            <section class="contact-links-logos">
+                <a href="mailto:ryan.shouse@mykenzie.snhu.edu" target="_blank"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/rmshouse/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Rmshouse/" target="_blank"><i class="fa-brands fa-github"></i></a>
             </section>
-            <span class="contact-links">
-                <a href="mailto:ryan.shouse@mykenzie.snhu.edu"><img src="images/Gmail-logo.png" alt="gmail logo" height="15" width="20"></a>
-                <a href="https://www.linkedin.com/in/rmshouse/" target="_blank"><img src="images/linkedIn-logo.png" alt="linkedin logo" height="15" width="15"></a>
-                <a href="https://github.com/Rmshouse/Portfolio" target="_blank"><img src="images/github-logo.png" alt="github logo" height="15" width="15"></a>
-            </span>
         </nav>
 
         <main class="main-content">
             <section class="welcome section-margin-padding">
                 <h1>Hello my name is <br/><span class="make-big">Ryan Shouse</span><br/>Aspiring<br/><span class="make-big">Front-End Web Developer</span></h1>
             </section>
+
             <section id="about" class="about section-margin-padding">
-                <header class="make-big">ABOUT</header>
-                <p>After eleven years working in various professional kitchens I decided I wanted something different in life. After some time as a stay-at-home parent I returned to the workforce doing hard labor for Amazon. Not only did I receive my G.E.D. thanks to that job but I had the opportunity to try front-end web development which was all paid for by the company. I learned quickly that I really enjoy coding and earned my certificate for front-end web development through Kenzie Academy at Southern New Hampshire University.</p>
+                <header class="make-big bottom-border-left-half">ABOUT</header>
+                <p>After eleven years working in various professional kitchens I decided I wanted something different in life. After some time as a stay-at-home parent I returned to the workforce doing hard labor for Amazon. Not only did I receive my G.E.D. thanks to that job, but I had the opportunity to try front-end web development which was all paid for by the company. I learned quickly that I really enjoy coding and earned my certificate for front-end web development through Kenzie Academy at Southern New Hampshire University.</p>
             </section>
+
             <section id="skills" class="skills section-margin-padding">
-                <header class="make-big">SKILLS</header>
-                <span class="skill-logos"><img src="images/HTML5-logo.png" alt="html logo" height="50" width="50"><img src="images/CSS3-logo.png" alt="css logo" height="50" width="50"><img src="images/JavaScript-logo.png" alt="javascript logo" height="50" width="50"><img src="images/github-logo.png" alt="github logo" height="50" width="50"></span>
+                <header class="make-big bottom-border-right-half">SKILLS</header>
+                <span class="skill-logos"><i class="fa-brands fa-html5 fa-2xl"></i><i class="fa-brands fa-css3-alt fa-2xl"></i><i class='fab fa-js-square fa-2xl'></i><i class="fa-brands fa-github fa-2xl"></i></span>
                 <p>During my time with Kenzie Academy I learned foundational skills and knowledge using HTML, CSS and Javascript as well as version control with GitHub. The main focus of the course was learning the basics and writing clean and semantically correct code. I am eager to add upon this throughout my career learning as much as I can.</p>
             </section>
+
             <section id="projects" class="projects section-margin-padding">
-                <header class="make-big">PROJECTS</header>
+                <header class="make-big bottom-border-left-half">PROJECTS</header>
                 <p>I hope to fill this section with many new things as I really enjoy working on web development projects.</p>
                 <button type="button" class="collapsible">Flipped Up Trivia!</button>
                 <section class="collapsible-content">
@@ -61,13 +58,14 @@
                     <p>A trivia game loosely based off Jeopardy!<br/> Capstone project required to finish my certificate program.</p>
                 </section>
             </section>
+
             <footer id="contact" class="contact section-margin-padding">
                 <header class="make-big">Contact</header>
                 <p>You can reach me through my email, LinkedIn, or check out my code on my GitHub.</p>
                 <span class="contact-links">
-                    <a href="mailto:ryan.shouse@mykenzie.snhu.edu"><img src="images/Gmail-logo.png" alt="gmail logo" height="30" width="40"></a>
-                    <a href="https://www.linkedin.com/in/rmshouse/" target="_blank"><img src="images/linkedIn-logo.png" alt="linkedin logo" height="30" width="30"></a>
-                    <a href="https://github.com/Rmshouse/Portfolio" target="_blank"><img src="images/github-logo.png" alt="github logo" height="30" width="30"></a>
+                    <a href="mailto:ryan.shouse@mykenzie.snhu.edu" target="_blank">Ryan.Shouse@mykenzie.snhu.edu</a>
+                    <a href="https://www.linkedin.com/in/rmshouse/" target="_blank">Linkedin.com/rmshouse</a>
+                    <a href="https://github.com/Rmshouse/" target="_blank">Github.com/rmshouse</a>
                 </span>
             </footer>
         </main>
