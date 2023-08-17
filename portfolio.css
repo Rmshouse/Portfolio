@@ -11,15 +11,6 @@ body {
     font-family: sans-serif;
 }
 
-.nav-bar {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: linear-gradient(to right, black, rgba(148, 0, 211, 0.5), rgba(148, 0, 211, 0.5), black);
-}
-
 .drop-button {
     color: darkturquoise;
     font-size: 32px;
@@ -28,10 +19,12 @@ body {
 }
 
 .drop-down {
-    position: relative;
-    display: inline-block;
+    z-index: 1;
+    /* display: inline; */
+    position: sticky;
+    top: 0;
+    float: left;
 }
-
 
 
 .nav-links {
@@ -54,13 +47,20 @@ body {
     margin: 10px;
 }
 
-.main-content {
-    padding: 0 15px 15px 15px;
+.contact-links-logos {
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    float: right;
+    padding: 5px;
 }
 
-.welcome .make-big {
-    text-decoration: underline;
-    text-decoration-color: rgb(0, 206, 209, 0.9);
+.main-content {
+    padding: 0 15px 15px 15px;
 }
 
 a {
@@ -90,8 +90,52 @@ a {
 }
 
 .welcome {
+    position: relative;
     text-align: center;
 
+}
+
+.welcome:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url('images/background\ keyboard\ image.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+h1 {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+  
+h1:before,
+h1:after {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: '';
+}
+  
+h1:before {
+    right: 0;
+    top: 0;
+    border-right: 3px solid darkturquoise;
+    border-top: 3px solid darkturquoise;
+}
+  
+h1:after {
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid darkturquoise;
+    border-bottom: 3px solid darkturquoise;
 }
 
 .about {
