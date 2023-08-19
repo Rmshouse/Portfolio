@@ -11,19 +11,19 @@ body {
     font-family: sans-serif;
 }
 
-.drop-button {
-    color: darkturquoise;
-    font-size: 32px;
-    background-color: transparent;
-    border: none;
-}
-
 .drop-down {
     z-index: 1;
     display: inline;
     position: sticky;
     top: 0;
     float: left;
+}
+
+.drop-button {
+    color: darkturquoise;
+    font-size: 32px;
+    background-color: transparent;
+    border: none;
 }
 
 
